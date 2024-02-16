@@ -1,2 +1,3 @@
 To do:
-Start backend.
+1- finish featured brands
+2- Start backend.
