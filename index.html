@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+  <link rel="icon" href="assets/img/car.ico" type="image/x-icon">
+  <title>AutoLogin</title>
+  <link rel="stylesheet" href="assets/css/style1.css">
+</head>
+<body>
+  <!-- Login Form Wrapper -->
+  <div class="wrapper" title="Login Form">
+    <!-- Title -->
+    <div class="title" title="Auto Performance Website">
+      AutoPerformance
+    </div>
+    <!-- Login Form -->
+    <form action="dashboard/index.html">
+      <!-- Email Field -->
+      <div class="field" title="Enter your email address">
+        <input type="text" required>
+        <label>Email Address</label>
+      </div>
+      <!-- Password Field -->
+      <div class="field" title="Enter your password">
+        <input type="password" required>
+        <label>Password</label>
+      </div>
+    
+      <div class="content">
+        <!-- Remember Me Checkbox -->
+        <div class="checkbox" title="Remember me">
+          <input type="checkbox" id="remember-me">
+          <label for="remember-me">Remember me</label>
+        </div>
+        <!-- Forgot Password Link -->
+        <div class="pass-link">
+          <a href="#" title="Forgot your password?">Forgot password?</a>
+        </div>
+      </div>
+      <!-- Login Button -->
+      <div class="field">
+        <input type="submit" value="Login" title="Click to login">
+      </div>
+      <!-- Signup Link -->
+      <div class="signup-link" title="Not a member?">
+        Not a member? <a href="#">Signup now</a>
+      </div>
+    </form>
+  </div>
+  <script>
+    //login box on page load for phone
+    window.onload = function() {
+        if (window.innerWidth <= 600) {
+            document.querySelector('.wrapper').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    };
+</script>
+</body>
+</html>
